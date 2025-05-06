@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Repos" %>
+
+<h1>Repos</h1>
+
+<div id="repos">
+  <% @repos.each do |repo| %>
+    <%= render repo %>
+    <p>
+      <%= link_to "Show this repo", repo %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New repo", new_repo_path %>

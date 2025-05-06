@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @repo %>
+
+<div>
+  <%= link_to "Edit this repo", edit_repo_path(@repo) %> |
+  <%= link_to "Back to repos", repos_path %>
+
+  <%= button_to "Destroy this repo", @repo, method: :delete %>
+</div>
